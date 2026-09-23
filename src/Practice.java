@@ -43,11 +43,23 @@ public class Practice {
      * 
      * @param a an int
      * @param b an int
+     * @return 
      * @return true if a is strictly more than twice the value of b, false otherwise
      */
     public static boolean moreThanDouble(int a, int b) {
-        // TODO: Delete the dummy return statement and implement this method here!
-        return false;
+        boolean status;
+        if ((a / b) >= 2)
+            status = true;
+        else
+            status = false;
+
+        return status;
+        
+        System.out.println("input:");
+        System.out.println("a: " + a + "b: " + b);
+        System.out.println("return: ");
+        System.out.println();
+        
     }
 
 
@@ -87,9 +99,9 @@ public class Practice {
 
         System.out.println();
         System.out.println("///// More than Double /////");
-        System.out.println("moreThanDouble(10, 3): " + moreThanDouble(10, 3));
-        System.out.println("moreThanDouble(6, 4): " + moreThanDouble(6, 4));
-        System.out.println("moreThanDouble(4, 2): " + moreThanDouble(4, 2));
+        moreThanDouble(10, 3);
+        moreThanDouble(6, 4);
+        moreThanDouble(4, 2);
 
         System.out.println();
         System.out.println("///// All Start With A /////");
