@@ -17,7 +17,10 @@ public class Practice {
      * @param items an array of strings to print
      */
     public static void printItems(String[] items) {
-        // TODO: Implement this method here!
+        String[] arrayWords = {"welcome", "to", "cs", "123"};
+        for (int i = 0; i < arrayWords.length; i++) {
+            System.out.println(i);
+        }
     }
 
     /**
