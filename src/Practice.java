@@ -18,7 +18,7 @@ public class Practice {
      */
     public static void printItems(String[] items) {
         for (int i = 0; i < items.length; i++) {
-            System.out.println(printItems(items));
+           // System.out.println(printItems(items));
         }
     }
 
@@ -53,12 +53,15 @@ public class Practice {
         else
             status = false;
 
+        System.out.println("input: ");
+        System.out.println("a: " + a + " b: " + b);
+        System.out.println("return: ");
+        System.out.println(status);
+        System.out.println();
+
         return status;
         
-        System.out.println("input:");
-        System.out.println("a: " + a + "b: " + b);
-        System.out.println("return: ");
-        System.out.println();
+        
         
     }
 
