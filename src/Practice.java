@@ -17,9 +17,11 @@ public class Practice {
      * @param items an array of strings to print
      */
     public static void printItems(String[] items) {
-        for (int i = 0; i < items.length; i++) {
-           // System.out.println(printItems(items));
+        for (String string : items) {
+            String word = string;
+            System.out.println(word);
         }
+        System.out.println();
     }
 
     /**
@@ -94,7 +96,7 @@ public class Practice {
     public static void main(String[] args) {
         System.out.println();
         System.out.println("///// Print items /////");
-        // System.out.println("Calling printItems(new String[]{\"welcome\", \"to\", \"cs\", \"123\"})");
+        System.out.println("Calling printItems(new String[]{\"welcome\", \"to\", \"cs\", \"123\"})");
         printItems(new String[]{"welcome", "to", "cs", "123"});
         System.out.println();
         System.out.println("Calling printItems(new String[]{\"hello\", \"world\"})");
@@ -102,9 +104,9 @@ public class Practice {
 
         System.out.println();
         System.out.println("///// More than Double /////");
-        moreThanDouble(10, 3);
-        moreThanDouble(6, 4);
-        moreThanDouble(4, 2);
+        System.out.println("moreThanDouble(10, 3): " + moreThanDouble(10, 3));
+        System.out.println("moreThanDouble(6, 4): " + moreThanDouble(6, 4));
+        System.out.println("moreThanDouble(4, 2): " + moreThanDouble(4, 2));
 
         System.out.println();
         System.out.println("///// All Start With A /////");
@@ -113,4 +115,5 @@ public class Practice {
         System.out.println("allStartWithA(new String[]{}): " + allStartWithA(new String[]{}));
         System.out.println();
     }
+
 }
