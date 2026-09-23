@@ -17,9 +17,8 @@ public class Practice {
      * @param items an array of strings to print
      */
     public static void printItems(String[] items) {
-        String[] arrayWords = {"welcome", "to", "cs", "123"};
-        for (int i = 0; i < arrayWords.length; i++) {
-            System.out.println(i);
+        for (int i = 0; i < items.length; i++) {
+            System.out.println(printItems(items));
         }
     }
 
@@ -80,7 +79,7 @@ public class Practice {
     public static void main(String[] args) {
         System.out.println();
         System.out.println("///// Print items /////");
-        System.out.println("Calling printItems(new String[]{\"welcome\", \"to\", \"cs\", \"123\"})");
+        // System.out.println("Calling printItems(new String[]{\"welcome\", \"to\", \"cs\", \"123\"})");
         printItems(new String[]{"welcome", "to", "cs", "123"});
         System.out.println();
         System.out.println("Calling printItems(new String[]{\"hello\", \"world\"})");
