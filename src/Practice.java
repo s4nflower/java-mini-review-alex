@@ -50,15 +50,13 @@ public class Practice {
      */
     public static boolean moreThanDouble(int a, int b) {
         boolean status;
-        if ((a / b) >= 2)
+        if ((a / b) > 2)
             status = true;
         else
             status = false;
         System.out.println();
 
         return status;
-        
-        
         
     }
 
@@ -84,17 +82,18 @@ public class Practice {
      * @return true if every word starts with A (case-insensitive), false otherwise.
      */
     public static boolean allStartWithA(String[] words) {
-        boolean flag;
+        boolean flag = true;
 
         for (int i = 0; i < words.length; i++) {
             char charHolder;
             charHolder = words[i].toLowerCase().charAt(0);
             if (charHolder == 'a')
-                return true;
+                flag = true;
             else {
-                return false;
+                flag = false;
             }
         }
+        return flag;
     }
 
     public static void main(String[] args) {
