@@ -54,11 +54,6 @@ public class Practice {
             status = true;
         else
             status = false;
-
-        System.out.println("input: ");
-        System.out.println("a: " + a + " b: " + b);
-        System.out.println("return: ");
-        System.out.println(status);
         System.out.println();
 
         return status;
@@ -89,8 +84,17 @@ public class Practice {
      * @return true if every word starts with A (case-insensitive), false otherwise.
      */
     public static boolean allStartWithA(String[] words) {
-        // TODO: Delete the dummy return statement and implement this method here!
-        return false;
+        boolean flag;
+
+        for (int i = 0; i < words.length; i++) {
+            char charHolder;
+            charHolder = words[i].toLowerCase().charAt(0);
+            if (charHolder == 'a')
+                return true;
+            else {
+                return false;
+            }
+        }
     }
 
     public static void main(String[] args) {
