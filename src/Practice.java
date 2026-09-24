@@ -1,3 +1,8 @@
+/*
+Alex Sullivan
+Sep 23rd
+*/
+
 public class Practice {
 
     /**
@@ -16,6 +21,7 @@ public class Practice {
      * 
      * @param items an array of strings to print
      */
+
     public static void printItems(String[] items) {
         for (String string : items) {
             String word = string;
@@ -48,6 +54,7 @@ public class Practice {
      * @return 
      * @return true if a is strictly more than twice the value of b, false otherwise
      */
+
     public static boolean moreThanDouble(int a, int b) {
         boolean status;
         if ((a / b) > 2)
@@ -57,9 +64,7 @@ public class Practice {
         System.out.println();
 
         return status;
-        
     }
-
 
     /**
      * Returns whether every word in the array starts with the letter A (either
@@ -81,6 +86,7 @@ public class Practice {
      * @param words a array of words
      * @return true if every word starts with A (case-insensitive), false otherwise.
      */
+    
     public static boolean allStartWithA(String[] words) {
         boolean flag = true;
 
